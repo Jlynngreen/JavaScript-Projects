@@ -18,5 +18,5 @@ var teal = "I love teal.";
 var teal = teal.fontcolor("teal");
 document.write(teal);
 
-Document.write(5 +5);
+Document.write(5 + 5);
 

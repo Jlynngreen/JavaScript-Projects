@@ -15,10 +15,11 @@ var yellow = "I love yellow";
 var yellow = yellow.fontcolor("yellow");
 document.write(yellow);
 
-Document.write(25 + 25);
+document.write(25 + 25);
 
 function myFunction() {
     var sentence = "I am learning";
-    sentence += " a lot from this book!";
+    var sentencesentence = " i am learning  i am learning"
+    sentence += " a lot from this book!"+ sentencesentence;
     document.getElementById("Concatenate").innerHTML = sentence;
 }
