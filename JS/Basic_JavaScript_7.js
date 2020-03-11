@@ -1,3 +1,4 @@
+
 var X = 10;
 function Add_numbers_1() {
     document.write(20 + X + "<br>");
@@ -21,7 +22,7 @@ Add_numbers_2();
 
 function Add_numbers_1() {
     var X = 10;
-    console.log(15 +X);
+    console.log(15 + X);
 }
 function Add_numbers_2() {
     console.log(X + 100);
@@ -30,9 +31,10 @@ function Add_numbers_2() {
 Add_numbers_1();
 Add_numbers_2();
 
+
 function get_Date() {
     if (new Date().getHours() < 18) {
-        document.getElementById("Greeting").innerHTML = "How are you today";
+        document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
 
@@ -58,12 +60,27 @@ function Time_function() {
 }
 
 function Age_Function() {
-    Age = document.getElementById("Age").Value;
-    if (Age >= 25) {
-        Vote = " You are old enough to vote!";
+    Age = document.getElementById("Age").value;
+    if (Age >= 18) {
+        Vote = "You are old enough to vote!";
     }
     else {
         Vote = "You are not old enough to Vote!";
     }
-    document.getElementById("How_old_are_you?").innerHTML = vote;
+    document.getElementById("How_old_are_you?").innerHTML = Vote;
+}
+
+function bestDog() {
+    var breed = document.getElementById("type").value;
+    var res
+    if (breed == "Pitbull"){
+        res = "You are correct."
+    }
+    else if (breed == "goldendoodle") {
+        res = "good job."
+    }
+    else {
+        res = "redo the test."
+    }
+    document.getElementById("result").innerHTML = res
 }
