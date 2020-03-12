@@ -4,16 +4,16 @@ function slice_Method() {
     document.getElementById("Slice").innerHTML = Section;
 }
 
-function myfunction() {
+function uppercase_method() {
     var str = "Hello World"
     var res = str.toUpperCase();
     document.getElementById("caps").innerHTML = res;
 }
 
-function myFunction() {
+function Search_Method() {
     var str = "Mr. Green has a red house"
     var n = str.search("red");
-    document.getElementById("sample").innerHTML = n;
+    document.getElementById("Sample").innerHTML = n;
   }
 
   function string_Method() {
@@ -23,10 +23,10 @@ function myFunction() {
 
   function precision_Method() {
       var X = 12938.3012987376112;
-      document.getElementById("Precision").innerHTML = X.toPrecision(10);
+      document.getElementById("Precision").innerHTML = X.toPrecision(5);
   }
 
-  function myFunction() {
+  function toFix() {
       var num = 5.56789;
       var n = num.toFixed();
       document.getElementById("fix").innerHTML =n;
