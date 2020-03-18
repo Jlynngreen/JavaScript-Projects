@@ -26,6 +26,14 @@ function constant_function() {
         Musical_Instrument.type + " was " + Musical_Instrument.price;
 }
 
+function cat_pics() {
+    var Cat_Picture = [];
+    Cat_Picture[0] = "sleeping";
+    Cat_Picture[1] = "playing";
+    Cat_Picture[2] = "eating";
+    document.getElementById("Cat").innerHTML = "In this Picture, the cat is " + Cat_Picture[2] + ".";
+}
+
 var X = 82;
 document.write(X);
 {
@@ -35,7 +43,7 @@ document.write(X);
 document.write("<br>" + X);
 
 let car = {
-    make: "Dodgem ",
+    make: "Dodge ",
     model: "Viper ",
     year: "2021 ",
     color: "red ",
@@ -43,4 +51,4 @@ let car = {
         return "The car is a " + this.year + this.color + this.make + this.model;    
     }
 };
-document.getElementById{"Car_Object"}.innerHTML = car.description();
+document.getElementById("Car_Object").innerHTML = car.description();
