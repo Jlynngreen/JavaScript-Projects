@@ -27,10 +27,10 @@ function Handle_Operator (Next_Operator) {
         return;
 }
 if (First_Operand == null) {
-    Calculator.First_Operand = Value_of_Input;
+    Calculator.First_Operand = Value_of_input;
 } else if (operator) {
     const Value_Now = First_Operand || 0;
-    const result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
+    const result = Perform_Calculation[operator] (Value_Now, Value_of_input);
     
     Calculator.Display_Value = String(result);
     Calculator.First_Operand = result;
