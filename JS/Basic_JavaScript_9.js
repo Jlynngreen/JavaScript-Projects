@@ -1,3 +1,4 @@
+
 function countdown() {
     var seconds = document.getElementById("seconds").value;
     function tick() {
@@ -40,4 +41,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
 }
